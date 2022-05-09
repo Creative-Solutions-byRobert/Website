@@ -1,0 +1,32 @@
+
+section {
+  margin-top: 7%;
+}
+
+.brand,
+.brand * {
+  display: inline;
+}
+
+.brand>img {
+  margin-right: 10px;
+}
+
+.brand>div:last-child {
+  font-size: 0.75rem;
+}
+
+
+.title {
+  font-size: 3rem;
+  line-height: 1.5;
+  margin-bottom: 3%;
+}
+
+.list-section {
+  margin-left: 10%;
+}
+
+.section-image {
+  margin-left: 7%;
+}
