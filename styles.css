@@ -5,7 +5,7 @@
 
 
 section {
-  margin: 7%;
+  margin-top: 7%;
 }
 .icon::before {
   content: 'RB';
@@ -31,29 +31,21 @@ section {
   font-size: 1.3rem;
 }
 
-.brand-sub {
-  margin-left: 5px;
-}
 
-.brand>img {
-  margin-right: 10px;
-}
-
-.brand>div:last-child {
-  font-size: 1rem;
-}
 
 
 .title {
   font-size: 3rem;
   line-height: 1.5;
   margin-bottom: 3%;
+  font-weight: bolder;
 }
 
-
+/*
 .row {
   margin: 0;
-}
+} */
+
 
 #hero-image img {
   margin: 0;
@@ -62,27 +54,41 @@ section {
   height: 100%;
 
 }
+@media screen and (max-device-width: 400px) {
+  .brand .hide {
+    display: none !important;
+  }
+}
 
+@media screen and (max-device-width: 765px) {
+  #hero-image {
+    width: 50% !important;
+    height: 50% !important;
+  }
+  .main-content {
+    flex-wrap: wrap !important;
+  }
+}
 
-@media screen and (max-device-width: 999px) {
+@media screen and (max-device-width: 775px) {
 
   section h1, section h2 {
-    font-size: 1.5rem !important;
+    font-size: 1.4rem !important;
   }
 
-  section.section {
+  /* section.section {
     flex-wrap: wrap !important;
     order: 1;
   }
 
   section #hero-image {
     order: -1;
-  }
+  } */
 }
 
-
+/*
 @media screen and (max-device-width: 530px) {
 
 
 
-}
+}  */
