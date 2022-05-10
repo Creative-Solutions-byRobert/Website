@@ -1,11 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 
 section {
-  margin-top: 7%;
+  margin: 7%;
 }
+.icon::before {
+  content: 'RB';
+}
+.icon {
+  font-size: 20px;
+  font-weight: bolder;
+  background-color: purple;
+  color: white;
+  text-align: center;
+  line-height: 2.5;
+  padding: 3px;
+  border-radius: 25%;
+}
+
 
 .brand,
 .brand * {
   display: inline;
+}
+
+.brand-title {
+  font-size: 1.3rem;
+}
+
+.brand-sub {
+  margin-left: 5px;
 }
 
 .brand>img {
@@ -13,7 +40,7 @@ section {
 }
 
 .brand>div:last-child {
-  font-size: 0.75rem;
+  font-size: 1rem;
 }
 
 
@@ -23,10 +50,39 @@ section {
   margin-bottom: 3%;
 }
 
-.list-section {
-  margin-left: 10%;
+
+.row {
+  margin: 0;
 }
 
-.section-image {
-  margin-left: 7%;
+#hero-image img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+
+}
+
+
+@media screen and (max-device-width: 999px) {
+
+  section h1, section h2 {
+    font-size: 1.5rem !important;
+  }
+
+  section.section {
+    flex-wrap: wrap !important;
+    order: 1;
+  }
+
+  section #hero-image {
+    order: -1;
+  }
+}
+
+
+@media screen and (max-device-width: 530px) {
+
+
+
 }
