@@ -54,7 +54,7 @@ section {
   height: 100%;
 
 }
-@media screen and (max-device-width: 400px) {
+@media screen and (max-device-width: 475px) {
   .brand .hide {
     display: none !important;
   }
