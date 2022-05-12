@@ -3,92 +3,56 @@
   padding: 0;
 }
 
+img {
+  width: 100%;
+  height: 100%;
+}
 
 section {
   margin-top: 7%;
 }
+
 .icon::before {
   content: 'RB';
 }
+
 .icon {
   font-size: 20px;
   font-weight: bolder;
   background-color: purple;
   color: white;
   text-align: center;
-  line-height: 2.5;
-  padding: 3px;
-  border-radius: 25%;
-}
-
-
-.brand,
-.brand * {
-  display: inline;
+  line-height: 2.6;
+  border-radius: 30%;
+  border: 2px solid rgb(168 168 168);
+  text-shadow: 1px 3px 6px silver;
+  background-image:  radial-gradient(circle at 100% 100%, transparent 2px, #5c3566 2px, #5c3566 8px, transparent 8px), linear-gradient(to right, #5c3566, #75507b), radial-gradient(circle at 0% 100%, transparent 2px, #75507b 2px, #75507b 8px, transparent 8px),linear-gradient(to bottom, #75507b, #5c3566), radial-gradient(circle at 0% 0%, transparent 2px, #5c3566 2px, #5c3566 8px, transparent 8px), linear-gradient(to left, #5c3566, #ad7fa8), radial-gradient(circle at 100% 0%, transparent 2px, #ad7fa8 2px, #ad7fa8 8px, transparent 8px), linear-gradient(to top, #ad7fa8, #5c3566);
+  background-size: 8px 8px, calc(100% - 16px) 2px, 2px 2px, 2px calc(100% - 16px);
+  background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
+  background-repeat: no-repeat;
 }
 
 .brand-title {
   font-size: 1.3rem;
+  font-weight: 700;
 }
 
-
-
+.brand-sub {
+  font-style: italic;
+  position: relative;
+  bottom: 2px;
+}
 
 .title {
-  font-size: 3rem;
+  font-size: 200%;
   line-height: 1.5;
   margin-bottom: 3%;
   font-weight: bolder;
 }
 
-/*
-.row {
-  margin: 0;
-} */
-
-
-#hero-image img {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-
+#test {
+  position: fixed;
+  bottom: 0;
+  font-size: 22px;
+  font-weight: bolder;
 }
-@media screen and (max-device-width: 475px) {
-  .brand .hide {
-    display: none !important;
-  }
-}
-
-@media screen and (max-device-width: 765px) {
-  #hero-image {
-    width: 50% !important;
-    height: 50% !important;
-  }
-  .main-content {
-    flex-wrap: wrap !important;
-  }
-}
-
-@media screen and (max-device-width: 775px) {
-
-  section h1, section h2 {
-    font-size: 1.4rem !important;
-  }
-
-  /* section.section {
-    flex-wrap: wrap !important;
-    order: 1;
-  }
-
-  section #hero-image {
-    order: -1;
-  } */
-}
-
-/*
-@media screen and (max-device-width: 530px) {
-
-
-
-}  */
