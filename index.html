@@ -5,7 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width" />
 
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- My Files -->
     <link rel="stylesheet" type="text/css" href="styles.css">
@@ -17,11 +19,13 @@
 
   <body>
 
-    <!-- NavBar -->
-    <nav class="navbar navbar-expand-lg navbar-dark flex-nowrap">
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-blue text-white">
 
+      <!-- Brand -->
       <div class='brand d-inline d-flex flex-row justify-content-center align-items-lg-center'>
-        <div class="icon px-2 d-inline"></div> <!-- RB Icon -->
+        <!-- RB Icon -->
+        <div class="icon px-2 d-inline"></div>
 
         <!-- Brand Name -->
         <div class="brand d-inline d-flex flex-row flex-wrap justify-content-center hide">
@@ -31,36 +35,41 @@
         </div>
       </div>
 
-      <!-- Hamburger Menu  Tablets and Phone-->
-      <button class="menu navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <!-- NavBar Menu Icon -->
+      <button class="menu navbar-toggler menu" type="button" data-toggle="collapse" data-target="#navbarSupportedContent20" aria-controls="navbarSupportedContent20" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon text-white"></span>
       </button>
 
-      <!-- Links and Dropdown Menu -->
-      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <!-- Collapsible content -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent20">
+
+        <!-- Links -->
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">Features</a>
+            <a class="nav-link" href="#">Features</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">Your Creative Needs</a>
+            <a class="nav-link" href="#">Your Creative Needs</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">Templates</a>
+            <a class="nav-link" href="#">Templates</a>
           </li>
 
-          <li class="nav-item dropdown">
+          <!-- Dropdown Menu -->
+          <li class="nav-item dropdown mr-5">
             <a class="nav-link dropdown-toggle  text-white" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">GitHub Repositories</a>
-            <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
-              <a class="bg-hover dropdown-item text-white" href="https://creative-solutions-byrobert.github.io/Creative-Project-byRobert/">My Projects</a>
-              <a class="bg-hover dropdown-item text-white" href="https://creative-solutions-byrobert.github.io/Guenther-Projects/">The Guenther Project</a>
-              <a class="bg-hover dropdown-item text-white" href="#">More coming soon. . .</a>
+            <div class="dropdown-menu bg-blue hov-color" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item text-white" href="https://creative-solutions-byrobert.github.io/Creative-Project-byRobert/">My Projects</a>
+              <a class="dropdown-item text-white" href="https://creative-solutions-byrobert.github.io/Guenther-Projects/">The Guenther Project</a>
+              <a class="dropdown-item text-white" href="#">More coming soon. . .</a>
             </div>
           </li>
 
         </ul>
       </div>
     </nav>
+
+
 
 
 
@@ -71,8 +80,10 @@
 
         <!-- Use row inside container to fix the margin -->
         <div class='row justify-content-center '>
-          <h1 class='title text-center col-12'>Fulfilling your web application needs, </h1>
+          <h1 class='title text-center col-12'>Fulfilling All Your Web Application Needs</h1>
+          <div class="col-2 line">
 
+          </div>
           <h2 class='title text-center col-12'>one step at a time</h2>
 
 
@@ -90,8 +101,8 @@
             </div>
 
 
-            <div class="col-md-7 w-75 px-5">
-              <img class='w-100 h-100' src="responsive.png" alt="">
+            <div class="col-md-7 w-75 px-5 d-flex justify-content-center align-content-center">
+              <img class='img-fluid' src="responsive.png" alt="">
             </div>
           </div>
 

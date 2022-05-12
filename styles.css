@@ -1,12 +1,19 @@
 * {
   margin: 0;
   padding: 0;
+
+}
+.line {
+  background-color: rgb(50, 76, 117);
+  padding: 2px;
+}
+.bg-blue {
+  background-color: rgb(50, 76, 117) !important;
+}
+.hov-color a:hover {
+  background-color: rgb(96, 124, 168);
 }
 
-nav {
-  background-color: rgb(50, 76, 117);
-  color: white;
-}
 
 section {
   padding: 7% 0;
@@ -14,7 +21,7 @@ section {
 
 section, section * {
 
-  background-color: rgb(50, 76, 117);
+  background-color: rgb(96, 124, 168);
   color: white;
 }
 
@@ -30,11 +37,9 @@ section, section * {
   text-align: center;
   line-height: 2.6;
   border-radius: 30%;
+
 }
 
-.bg-hover:hover {
-  background-color: rgb(50, 76, 117);
-}
 
 .brand-title {
   font-size: 1.3rem;
@@ -47,20 +52,35 @@ section, section * {
   bottom: 2px;
 }
 
+
 .title {
   font-size: 225%;
   line-height: 1.5;
-  margin-bottom: 3%;
+
   font-weight: bolder;
+  color: rgba(245, 231, 198, 0.7);
+
+  font-family: 'Macondo', cursive;
 }
 
+h1.title {
+  padding-bottom: 0;
+
+}
+
+h2.title {
+  margin-top: 10px;
+}
 
 
 .list {
   font-size: 100%;
 
 }
-.list li {
-  background-color: rgb(50, 76, 117);
-  color: white;
+ .list li {
+  background-color: rgb(96, 124, 168);
+  color: rgba(245, 231, 198, 0.9);
+}
+.nav-item a:hover {
+    color: rgba(245, 231, 198, 0.9) !important;
 }
