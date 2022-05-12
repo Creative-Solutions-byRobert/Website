@@ -3,13 +3,19 @@
   padding: 0;
 }
 
-img {
-  width: 100%;
-  height: 100%;
+nav {
+  background-color: rgb(50, 76, 117);
+  color: white;
 }
 
 section {
-  margin-top: 7%;
+  padding: 7% 0;
+}
+
+section, section * {
+
+  background-color: rgb(50, 76, 117);
+  color: white;
 }
 
 .icon::before {
@@ -26,6 +32,10 @@ section {
   border-radius: 30%;
 }
 
+.bg-hover:hover {
+  background-color: rgb(50, 76, 117);
+}
+
 .brand-title {
   font-size: 1.3rem;
   font-weight: 700;
@@ -38,8 +48,19 @@ section {
 }
 
 .title {
-  font-size: 200%;
+  font-size: 225%;
   line-height: 1.5;
   margin-bottom: 3%;
   font-weight: bolder;
+}
+
+
+
+.list {
+  font-size: 100%;
+
+}
+.list li {
+  background-color: rgb(50, 76, 117);
+  color: white;
 }
