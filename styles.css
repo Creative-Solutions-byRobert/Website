@@ -1,86 +1,91 @@
-* {
-  margin: 0;
-  padding: 0;
-
+:root {
+  --nav-color: rgb(50, 76, 117);
+  --webBG-color: rgb(96, 124, 168);
+  --heading-color: rgba(245, 231, 198, 0.9);
 }
-.line {
-  background-color: rgb(50, 76, 117);
-  padding: 2px;
+body {
+  overflow: hidden;
 }
-.bg-blue {
-  background-color: rgb(50, 76, 117) !important;
-}
-.hov-color a:hover {
-  background-color: rgb(96, 124, 168);
-}
-
-
 section {
   padding: 7% 0;
 }
 
 section, section * {
 
-  background-color: rgb(96, 124, 168);
+  background-color: var(--webBG-color);
   color: white;
+}
+
+
+.blueLine:after {
+  content: '';
+  display: block;
+  border: 2px solid var(--nav-color);
+  border-left: transparent;
+  border-right: transparent;
+  width: 20%;
+  margin: 10px auto;
+}
+
+.bg-blue {
+  background-color: var(--nav-color) !important;
+}
+.hov-color a:hover {
+  background-color: var(--webBG-color);
 }
 
 .icon::before {
   content: 'RB';
-}
-
-.icon {
-  font-size: 20px;
+  display: inline;
+  font-size: 115%;
   font-weight: bolder;
   background-color: purple;
-  color: white;
-  text-align: center;
-  line-height: 2.6;
+  line-height: 2;
   border-radius: 30%;
-
+  padding: 2.5%;
+  font-style: italic;
 }
-
 
 .brand-title {
   font-size: 1.3rem;
-  font-weight: 700;
-}
-
-.brand-sub {
+  font-weight: 200;
+  font-family: 'Macondo', cursive;
   font-style: italic;
-  position: relative;
-  bottom: 2px;
+  text-align: center;
+  line-height: 1;
+}
+
+.brand-title::after {
+  content: 'by Robert';
+  display: inline-flex;
+  font-size: 90%;
+  font-style: italic;
 }
 
 
-.title {
+.hero-title {
   font-size: 225%;
   line-height: 1.5;
-
   font-weight: bolder;
   color: rgba(245, 231, 198, 0.7);
-
   font-family: 'Macondo', cursive;
 }
 
-h1.title {
-  padding-bottom: 0;
-
+.hero-subtitle {
+  margin-top: 3%;
+  margin-bottom: 7%;
+  color: rgba(245, 231, 198, 0.7);
+  font-family: 'Macondo', cursive;
 }
 
-h2.title {
-  margin-top: 10px;
-}
-
-
-.list {
-  font-size: 100%;
-
-}
- .list li {
-  background-color: rgb(96, 124, 168);
-  color: rgba(245, 231, 198, 0.9);
+.list li {
+  background-color: var(--webBG-color);
+  color: var(--heading-color);
 }
 .nav-item a:hover {
-    color: rgba(245, 231, 198, 0.9) !important;
+    color: var(--heading-color) !important;
+}
+
+.hero-image {
+  margin: 5%;
 }
