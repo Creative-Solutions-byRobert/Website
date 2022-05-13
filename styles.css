@@ -106,5 +106,5 @@ section.hero-section {
 [class*='list'] {
   background-color: var(--webBG-color);
   font-size: 103%;
-  color: rgba(245, 231, 198, 0.7);
+  color: white;
 }
