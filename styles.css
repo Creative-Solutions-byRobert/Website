@@ -14,7 +14,7 @@ body, h1, h2, h3, h4, h5, h6, div, p, img, section, nav, footer {
 
 
 /* Hero Section Defaults */
-section {
+section.hero-section {
   padding: 5% 0;
   background-color: var(--webBG-color);
   font-size: 103%;
