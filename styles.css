@@ -26,13 +26,17 @@ section.hero-section {
   background-color: var(--nav-color) !important;
 }
 
+.links {
+  margin-right: 2%;
+}
+
 /* github menu color */
-.gitHubbg-color a {
+.gitHub a {
   color : white;
 }
 
 /* github menu background color and color on hover */
-.gitHubbg-color a:hover {
+.gitHub a:hover {
   background-color: var(--webBG-color);
   color: var(--heading-color) !important;
 }
@@ -46,8 +50,9 @@ section.hero-section {
   background-color: purple;
   line-height: 2;
   border-radius: 30%;
-  padding: 2.5%;
+  padding: 3%;
   font-style: italic;
+  margin-left: 5%;
 }
 
 /* Creative Solutions */
@@ -102,9 +107,4 @@ section.hero-section {
   background-color: var(--webBG-color);
   font-size: 103%;
   color: rgba(245, 231, 198, 0.7);
-}
-
-/* Hero Image */
-.hero-image {
-  margin-left: 7%;
 }
