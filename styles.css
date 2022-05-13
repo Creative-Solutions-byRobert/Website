@@ -3,37 +3,41 @@
   --webBG-color: rgb(96, 124, 168);
   --heading-color: rgba(245, 231, 198, 0.9);
 }
-body {
-  overflow: hidden;
+
+/* Reset */
+body, h1, h2, h3, h4, h5, h6, div, p, img, section, nav, footer {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
 }
+
+
+/* Hero Section Defaults */
 section {
-  padding: 7% 0;
-}
-
-section, section * {
-
+  padding: 5% 0;
   background-color: var(--webBG-color);
-  color: white;
+  font-size: 103%;
+  color: rgba(245, 231, 198, 0.7);
 }
 
-
-.blueLine:after {
-  content: '';
-  display: block;
-  border: 2px solid var(--nav-color);
-  border-left: transparent;
-  border-right: transparent;
-  width: 20%;
-  margin: 10px auto;
-}
-
-.bg-blue {
+/* NavBar background color*/
+.navbarbg-color {
   background-color: var(--nav-color) !important;
 }
-.hov-color a:hover {
-  background-color: var(--webBG-color);
+
+/* github menu color */
+.gitHubbg-color a {
+  color : white;
 }
 
+/* github menu background color and color on hover */
+.gitHubbg-color a:hover {
+  background-color: var(--webBG-color);
+  color: var(--heading-color) !important;
+}
+
+/* My Logo */
 .icon::before {
   content: 'RB';
   display: inline;
@@ -46,15 +50,16 @@ section, section * {
   font-style: italic;
 }
 
+/* Creative Solutions */
 .brand-title {
   font-size: 1.3rem;
   font-weight: 200;
-  font-family: 'Macondo', cursive;
   font-style: italic;
   text-align: center;
   line-height: 1;
 }
 
+/* Insert Text by Robert */
 .brand-title::after {
   content: 'by Robert';
   display: inline-flex;
@@ -62,30 +67,44 @@ section, section * {
   font-style: italic;
 }
 
+.hero-section {
+  padding-bottom: 10.5%;
+}
 
+
+/* Hero Text */
 .hero-title {
   font-size: 225%;
   line-height: 1.5;
   font-weight: bolder;
-  color: rgba(245, 231, 198, 0.7);
   font-family: 'Macondo', cursive;
 }
 
+/* Blue line under hero text */
+.blueLine:after {
+  content: '';
+  display: block;
+  border: 2px solid var(--nav-color);
+  border-left: transparent;
+  border-right: transparent;
+  width: 20%;
+  margin: 10px auto;
+}
+
+/* Hero Subtitle */
 .hero-subtitle {
   margin-top: 3%;
   margin-bottom: 7%;
-  color: rgba(245, 231, 198, 0.7);
-  font-family: 'Macondo', cursive;
 }
 
-.list li {
+/* Hero List */
+[class*='list'] {
   background-color: var(--webBG-color);
-  color: var(--heading-color);
-}
-.nav-item a:hover {
-    color: var(--heading-color) !important;
+  font-size: 103%;
+  color: rgba(245, 231, 198, 0.7);
 }
 
+/* Hero Image */
 .hero-image {
-  margin: 5%;
+  margin-left: 7%;
 }
