@@ -1,110 +1,71 @@
-:root {
-  --nav-color: rgb(50, 76, 117);
-  --webBG-color: rgb(96, 124, 168);
-  --heading-color: rgba(245, 231, 198, 0.9);
-}
-
-/* Reset */
-body, h1, h2, h3, h4, h5, h6, div, p, img, section, nav, footer {
+html, body, img{
+  width: 100%;
+  height: 100%;
   margin: 0;
-  padding: 0;
-  border: 0;
   box-sizing: border-box;
+  padding: 0;
+
 }
 
-
-/* Hero Section Defaults */
-section.hero-section {
-  padding: 5% 0;
-  background-color: var(--webBG-color);
-  font-size: 103%;
-  color: rgba(245, 231, 198, 0.7);
+header {
+  padding: 0 1.6%;
 }
 
-/* NavBar background color*/
-.navbarbg-color {
-  background-color: var(--nav-color) !important;
-}
+body {
+  background-image: url('technology-lines.png');
+  background-size: cover;
+  background-repeat: no-repeat;
 
-.links {
-  margin-right: 2%;
-}
-
-/* github menu color */
-.gitHub a {
-  color : white;
-}
-
-/* github menu background color and color on hover */
-.gitHub a:hover {
-  background-color: var(--webBG-color);
-  color: var(--heading-color) !important;
 }
 
 /* My Logo */
-.icon::before {
+.RB-icon {
   content: 'RB';
   display: inline;
   font-size: 115%;
   font-weight: bolder;
   background-color: purple;
-  line-height: 2;
+  line-height: 50px;
   border-radius: 30%;
-  padding: 3%;
   font-style: italic;
-  margin-left: 5%;
+  margin-top: 7px;
+  margin-left: 25px;
+  width: 50px;
+  height: 50px;
 }
 
-/* Creative Solutions */
-.brand-title {
-  font-size: 1.3rem;
+
+.brand-name {
+  font-size: 430%;
   font-weight: 200;
   font-style: italic;
   text-align: center;
   line-height: 1;
+  margin-top: 7%;
 }
+
 
 /* Insert Text by Robert */
 .brand-title::after {
   content: 'by Robert';
-  display: inline-flex;
-  font-size: 90%;
-  font-style: italic;
-}
-
-.hero-section {
-  padding-bottom: 10.5%;
-}
-
-
-/* Hero Text */
-.hero-title {
-  font-size: 225%;
-  line-height: 1.5;
-  font-weight: bolder;
-  font-family: 'Macondo', cursive;
-}
-
-/* Blue line under hero text */
-.blueLine:after {
-  content: '';
   display: block;
-  border: 2px solid var(--nav-color);
-  border-left: transparent;
-  border-right: transparent;
-  width: 20%;
-  margin: 10px auto;
+  font-size: 35%;
+  font-style: italic;
+  margin-top: 2%;
+  margin-bottom: 6%;
 }
 
-/* Hero Subtitle */
-.hero-subtitle {
-  margin-top: 3%;
-  margin-bottom: 7%;
-}
+.img-box {
 
-/* Hero List */
-[class*='list'] {
-  background-color: var(--webBG-color);
-  font-size: 103%;
-  color: white;
+  text-align: left;
+  padding: 15% 24% 0 0;
+  background-image: url('laptop.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 10px solid black;
+  box-sizing: unset;
+}
+.img-box h5 {
+  padding-bottom: 5%;
+  padding-left: 3px;
 }
