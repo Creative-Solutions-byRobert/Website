@@ -4,18 +4,17 @@ html, body, img{
   margin: 0;
   box-sizing: border-box;
   padding: 0;
-
 }
 
 header {
   padding: 0 1.6%;
 }
 
-body {
+.section-bg {
   background-image: url('technology-lines.png');
   background-size: cover;
   background-repeat: no-repeat;
-
+  padding-bottom: 7%;
 }
 
 /* My Logo */
@@ -25,13 +24,11 @@ body {
   font-size: 115%;
   font-weight: bolder;
   background-color: purple;
-  line-height: 50px;
+  line-height: 2;
   border-radius: 30%;
-  font-style: italic;
   margin-top: 7px;
   margin-left: 25px;
-  width: 50px;
-  height: 50px;
+  padding: 5px 3px;
 }
 
 
@@ -56,16 +53,26 @@ body {
 }
 
 .img-box {
-
-  text-align: left;
-  padding: 15% 24% 0 0;
-  background-image: url('laptop.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 10px solid black;
-  box-sizing: unset;
+  width: 376px;
+  height: 425px;
 }
-.img-box h5 {
-  padding-bottom: 5%;
-  padding-left: 3px;
+
+.border-10-dark {
+  border: 10px solid black;
+}
+
+.hero-img {
+  margin-top: 10%;
+}
+
+.caption {
+    position: absolute;
+    bottom: -3%;
+    left: 76%;
+
+}
+
+
+@media screen and (max-width: 985px ) {
+
 }
