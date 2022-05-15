@@ -52,25 +52,51 @@ header {
   margin-bottom: 6%;
 }
 
-.img-box {
-  width: 376px;
-  height: 425px;
+
+
+
+
+.hero-text {
+  font-size: 200%;
+  font-weight: 200;
+  font-style: italic;
+  text-align: center;
+  line-height: 1;
+  margin-top: 7%;
+}
+.hero-text::after {
+  content: 'One step at a time';
+  display: block;
+  font-size: 50%;
+  font-style: italic;
+  margin-top: 2%;
+  margin-bottom: 6%;
 }
 
-.border-10-dark {
-  border: 10px solid black;
+.pink-circle {
+  margin-left: 10%;
 }
 
-.hero-img {
-  margin-top: 10%;
+.img {
+    display: block;
+    /* width: 50%; */
+}
+
+.thumbnail {
+    position: relative;
+    display: inline-block;
 }
 
 .caption {
     position: absolute;
-    bottom: -3%;
-    left: 76%;
-
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    text-align: center;
+    color: white;
+    font-weight: bold;
 }
+
 
 
 @media screen and (max-width: 985px ) {
